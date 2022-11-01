@@ -1,0 +1,528 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
+
+
+<section class="my-5">
+  <div id="colorlib-about">
+    <div class="container my-5">
+
+      <div class="row">
+        <div class="col-md-5 animate-box">
+          <div class="owl-carousel3">
+            <div class="item">
+
+              <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+                [showNavigationIndicators]="showNavigationIndicators">
+                <ng-template ngbSlide *ngFor="let image of images; index as i; index as j">
+                  <div class="picsum-img-wrapper">
+                    <img [src]="image" alt="Random slide" class="pic" />
+                  </div>
+
+                  <div style="background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(10px);
+                        -webkit-backdrop-filter: blur(10px);
+                        border-radius: 20px;
+                        margin-top:200px;
+                        border: 1px solid transparent;
+                      " class="carousel-caption">
+                    <h1>{{ titles[i] }}</h1>
+                    <!-- <p style="margin: 5px;">{{ discription[j] }}</p> -->
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <a href="https://drive.google.com/file/d/1MtKWouA6bAdb3basRonDenmOYkPqV8PW/view?usp=sharing" style="
+                            color: #FFFFFF;
+                            background-color: #6C55F9;
+                            border-radius: 30px;
+                            border: none;
+                            margin: 10px 10px;
+                            padding: 10px 10px;
+                            text-align: center;
+                          " class="btn btn-secondary active">
+                      <i class="fas fa-download"></i> my Resume
+                      </a>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-md-push-1 animate-box">
+          <div class="about-desc">
+            <div class="owl-carousel3">
+              <div class="item">
+                <h2><span>{{'headerTakudzwa' | translate}}</span><span>{{'headerMupanesure' | translate}}</span></h2>
+              </div>
+              
+              <div class="item">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_iv4dsx3q.json"  
+                background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+              </div>
+              <div class="item">
+                <h1>Net full Stack Developer</h1>
+              </div>
+              
+              
+            </div>
+            <div class="desc">
+              <div class="rotate">
+                <h2 class="heading">About</h2>
+              </div>
+              <p>I'm a .Net full stack developer, I create web and mobile applications. I like what I do and I'm always
+                looking forward to deliver the best looking and functional applications.
+                Hire me lets deliver the best experience to your intended application users/visitors.</p>
+              <p class="colorlib-social-icons my-4">
+                <a href="https://www.facebook.com/profile.php?id=100010630635297"><i
+                    style="color: #4267B2;" class="fab fa-2x  fa-facebook me-3"></i></a>
+                <a href="https://twitter.com/TMupanesure?t=YI0YAy8Dgk4ABZ_V-qna7w&s=08"><i style="color: #1DA1F2;"
+                    class="fab fa-2x  fa-twitter me-3"></i></a>
+                <a href="https://www.instagram.com/sput.niktech/?r=nametag"><i style="color: #5B51D8; margin-right:2px;"
+                    class="fab fa-2x  fa-instagram me-3"></i></a>
+                <a href="https://www.linkedin.com/in/takudzwa-mupanesure-14a3321b7"><i
+                    style="color: #0072b1;" class="fab fa-2x  fa-linkedin me-3"></i></a>
+                <a href="https://github.com/Takudzwamz"><i style="color: #181412;"
+                    class="fab fa-2x fa-github-square"></i></a>
+              </p>
+              <p><a href="/contact_me"
+                 style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-outline">Contact Me <i class="fas fa-arrow-alt-circle-right"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="custom-shape-divider-bottom-1667156080">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+  </div>
+  <div class="custom-shape-divider-top-1667156508">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  </div>
+  
+</section>
+
+
+<section class="welcome my-5" data-scroll-index="0">
+  <div class="container my-5">
+    <div class="row my-5">
+      <div class="col-md-12">
+        <h2 class="head-bar">
+          <i class="fas fa-2x fa-user-tie"></i> Professional Summary
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="welcome-content text-center">
+          <!--circle card with icon and text--->
+
+          <div class="row">
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-icon">
+                    <i class="fa fa-2x fa-code"></i>
+                  </div>
+                  <h5 class="card-title">Summary</h5>
+                  <p class="card-text">Dedicated and efficient full stack Junior .NET developer with 2+ years of experience in the .Net
+                    environment. Skilled in
+                    ASP.NET Core, Xamarin.Forms(Mobile development for both iOS and Android) and client-side web
+                    development(Angular single page applications).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-icon">
+                    <i class="fa fa-2x fa-code"></i>
+                  </div>
+                  <h5 class="card-title">Summary</h5>
+                  <p class="card-text">Worked on 7+ projects for both web and mobile app platforms.
+                    Developed, deployed and maintaining over 5 .NET/Xamarin.Forms/Angular web and mobile apps with good client
+                    satisfaction. I'm always looking to learn new things all the time for I believe the day I stop learning is the day I stop
+                    being
+                    innovative.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-icon">
+                    <i class="fa fa-2x fa-code"></i>
+                  </div>
+                  <h5 class="card-title">Summary</h5>
+                  <p class="card-text">I believe learning by doing is the best way to learn hence I work torwards creating as many projects as I
+                    can hence
+                    improving my skills.
+                    I believe in team work(Hello Github!) since one man can't change the world but two or more people can.</p>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>  
+
+          <i style="color: #160E0A;" class="fab fa-2x fa-github-square mt-2"></i> <a class="mt-2"
+            href="https://github.com/Takudzwamz/"><strong style="font-size:20px; color:#6C55F9;"> Check out my GitHub
+              repositories</strong></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1667156080">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div class="custom-shape-divider-top-1667156508">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+</section>
+
+<section class="welcome" data-scroll-index="0">
+  <div class="container my-5">
+    <div class="row my-5">
+      <div class="col-md-12">
+        <h2 class="head-bar">
+          <i class="fa fa-2x fa-brain"></i> MY SKILLS
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div  class="col-md-12">
+        <div class="skill-bars">
+          <div class="bar">
+            <div class="info">
+              <span>.Net Core, C#</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <span>Angular TypeScript</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          
+          <div class="bar">
+            <div class="info">
+              <span>CSS, SCSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Cloud computing, Digital Ocean, Git</span>
+            </div>
+            <div class="progress-line jquery">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Xamarin.forms</span>
+            </div>
+            <div class="progress-line xamarin">
+              <span></span>
+            </div>
+          </div>
+          
+          <div class="bar">
+            <div class="info">
+              <span>Strapi, VueJs</span>
+            </div>
+            <div class="progress-line strapi">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>SQL Server, Mysql, MongoDB</span>
+            </div>
+            <div class="progress-line mysql">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Russian language</span>
+            </div>
+            <div class="progress-line ru">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>English</span>
+            </div>
+            <div class="progress-line language">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1667156080">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div class="custom-shape-divider-top-1667156508">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+</section>
+<section id="welcome" class="resume" data-scroll-index="2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="head-bar">
+          <i class="fa fa-2x fa-book"></i> EDUCATION AND QUALIFICATIONS
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <article class="education">
+          <h1>
+            Voronezh State University  Russian Federation. <span class="label label-default">Sept 2016 to July 2020</span>
+          </h1>
+
+          <h2>
+            Certification
+            <small>B.Sc in Fundamental Computer Science and IT</small>
+          </h2>
+         
+        </article>
+
+       
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="head-bar"><i class="fa fa-2x fa-briefcase"></i> Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <article class="work">
+          <h1>
+            DataArt R&D Center Voronezh <br /> Russian Federation
+            <span class="label label-default">Sept 2019 to Aug 2020</span>
+          </h1>
+          <h2>Mobile development Intern</h2>
+         
+        </article>
+        
+        
+        
+        
+      </div>
+      <div class="col-md-6">
+        <article class="work">
+          <h1>
+            .Net full stack Developer <br /> Russian Federation
+            <span class="label label-default">October 2020 to present</span>
+          </h1>
+          <h2>Freelancing </h2>
+        
+        </article>
+        
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1667156080">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div class="custom-shape-divider-top-1667156508">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+</section>
+
+
+<!--About Me -->
+<section id="welcome" class="profile" data-scroll-index="1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 my-5">
+        <h2 class="head-bar"><i class="fas fa-2x fa-laptop-code"></i> Services I'm offering</h2>
+        <p class="justify-content-center">
+          Want a Services, E-commerce or any type of website? Hire me, lets work together to give your customer the best online experience.
+          Call me or email me lets talk.
+        </p>
+
+
+        
+
+        <div class="main my-3">
+          
+          <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img height="150" width="100%" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1636020087/Screenshot_2021-11-04_120015_od2lrn.png"></div>
+                <div class="card_content">
+                  <h2 class="card_title">E-commerce websites</h2>
+                  <p class="card_text">Fully responsive website, optimized to work on phone, tablets and computers, complete with shipping services, Online
+                  payment gateway integration, pagination, filtering, sorting, Admin panel and more.</p>
+                   
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img height="150" width="100%" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1636018918/Screenshot_2021-11-04_113051_bf6wti.png"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Services websites</h2>
+                  <p class="card_text">Fully responsive website, optimized to work on phone, tablets and computers, showcace your services to your clients in a
+                  beautiful and user friendly website/web app, comes with an Admin panel and more.</p>
+                   
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img height="150" width="100%" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1636018917/Screenshot_2021-11-04_112536_umkkdm.png"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Android applications</h2>
+                  <p class="card_text">Lets create a services or e-commerce Android mobile app, can also come with a website
+                  companion to give your customers/clients a choice to use your apps on various platforms. Comes with an Admin panel</p>
+                   
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img height="150" width="100%" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1636018903/Screenshot_2021-11-04_112908_ay8fqb.png"></div>
+                <div class="card_content">
+                  <h2 class="card_title">iOS applications</h2>
+                  <p class="card_text">Lets create a services or e-commerce iOS mobile app, can also come with a website
+                  companion to give your customers/clients a choice to use your apps on various platforms. Comes with an Admin panel</p>
+                   
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img height="150" width="100%"  src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1636018945/Screenshot_2021-11-04_113350_esplue.png"></div>
+                <div class="card_content">
+                  <h2 class="card_title">iOS & Android crossplatform apps</h2>
+                  <p class="card_text">Serve all your users from either iOS or Android with the same experience as these crossplatform apps share the same UI and experience.
+                    Lets work together if you are interested.
+                  </p>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img height="150" width="100%" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1636018890/Screenshot_2021-11-04_113845_qll9qn.png"></div>
+                <div class="card_content">
+                  <h2 class="card_title">API's</h2>
+                  <p class="card_text">Want me to develop your custom API, Lets customize your API for various applications where being implemented on mobile or web platforms.</p>
+                   
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <a class="my-5" [routerLink]="['/projects']" style="color: #ffffff;
+                      background-color: #6C55F9;
+                      border-radius: 30px;
+                      border: none;
+                      margin: 10px 10px;
+                      padding: 10px 10px;
+                      
+                      text-align: center;">Open featured projects</a>
+
+
+
+      </div>
+      <div class="col-md-4 my-5">
+        <div class="col-md-12">
+          <div>
+            <img style="border-radius: 5px;margin-top: 5px;"
+              src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1655819945/1655818782483_tpsuz5.png" width="100%"
+              height="100%" />
+          </div>
+          
+
+          <div class="item">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_ft0cqvpu.json" background="transparent"
+              speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1667156080">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div class="custom-shape-divider-top-1667156508">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+</section>

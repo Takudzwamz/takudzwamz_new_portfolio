@@ -1,0 +1,49 @@
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<header>
+  <nav style="
+          background: rgba(108, 85, 249, 0.6);
+          backdrop-filter: blur(7px);
+          -webkit-backdrop-filter: blur(10px);" 
+          class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light   box-shadow mb-0"
+          (scroll)="onscroll()" 
+          [ngClass]="navbarfixed?'fixed':'nofixed'">
+    <div class="container">
+      <img width="50" height="40" alt="logo" [routerLink]="['/']" class="logo" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1635267108/ico_bbiqat.png" />
+
+      <button class="navbar-toggler mb-3" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets8.lottiefiles.com/temp/lf20_7QqLAf.json"  background="transparent"  speed="1"  style="width: 40px; height: 40px;"  loop  autoplay></lottie-player>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <h6 style="font-size: 20px; font-weight:600; text-decoration: none; " class="  ms-2 me-3 "
+              [routerLink]="['/']">Home</h6>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <h6 style="font-size: 20px; font-weight:600; text-decoration: none; " class=" ms-2 me-3 "
+              [routerLink]="['/projects']">Projects</h6>
+          
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <h6 style="font-size: 20px; font-weight:600; text-decoration: none; " class=" ms-2 me-3 "
+              [routerLink]="['/contact']">Contact</h6>
+          </li>
+          <li class="nav-item" >
+            <app-select-language class=" ms-2 me-3 "></app-select-language>
+          </li>
+          <li class="nav-item" >
+            <app-dark-mode-toggle class=" ms-2 me-3 "> </app-dark-mode-toggle>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+

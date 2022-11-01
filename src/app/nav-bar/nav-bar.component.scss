@@ -1,0 +1,48 @@
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: 0.3s ease-in-out;
+  
+  }
+  
+  .nofixed{
+    position:static;
+    top: -50px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  
+  .navbar-toggler {
+    cursor: pointer;
+    margin-right: 5px;
+    outline: none;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  
+  
+  
+  .navbg{
+  background-image: var(--nav-bg-color);
+  border-radius: 10px;
+  }
+  
+  .logo {
+    cursor: pointer;
+  
+    
+  }
+  
+  .navbar-brand{
+      padding: 2px;
+  }
+  
+  
+  

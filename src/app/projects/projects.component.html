@@ -1,0 +1,99 @@
+<!-- Responsive header with text -->
+<!--About Me -->
+<section id="welcome" class="profile my-5" data-scroll-index="1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 my-5">
+        <h2 class="head-bar"><i class="fas fa-2x fa-laptop-code"></i> Completed Projects</h2>
+        <p class="justify-content-center ms-3">
+          Check out the projects I have completed thus far. The projects range from web applications to mobile applications. I am always looking to learn new technologies and improve my skills.
+        </p>
+
+
+        
+
+        
+        
+        <a class="my-5" [routerLink]="['/projects']" style="color: #ffffff;
+                      background-color: #6C55F9;
+                      border-radius: 30px;
+                      border: none;
+                      margin: 10px 10px;
+                      padding: 10px 10px;
+                      
+                      text-align: center;">Go back home <i class="fas fa-arrow-alt-circle-left"></i></a>
+
+
+
+      </div>
+      <div class="col-md-4 ">
+        <div class="col-md-12">
+          <div class="item">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_tno6cg2w.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1667156080">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div class="custom-shape-divider-top-1667156508">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+</section>
+
+
+
+<div  *ngIf="projectPosts$ | async as projectPosts" class="band mb-5">
+    
+    <div  *ngFor="let projectPost of projectPosts.items" class="item-2">
+      <div [routerLink]="['/projects', projectPost.sys.id]" style=" border-radius: 10px;
+          background: rgba(108, 85, 249, 0.4);
+          backdrop-filter: blur(3px);
+          -webkit-backdrop-filter: blur(10px);
+          text-decoration: none;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );" class="card">
+        <img [src]="projectPost.fields.image.fields.file.url"
+            class="rounded img-fluid w-100 img-responsive" style="padding: 5px 5px; "  alt="blog-image" />
+        <article>
+          <h1>{{projectPost.fields.title}}</h1>
+          <div class="divider"></div>
+          <div class="d-flex  justify-content-md-start justify-content-between views-content mt-2 ">
+            <p class="mb-0" style="font-size: 0.8rem;">  {{projectPost.fields.summary}}</p>
+        </div>
+        </article>
+        <div class="d-flex flex-row mt-3 mb-3">  
+            <div class="ms-3 d-flex flex-column"> 
+                <a  [routerLink]="['/projects', projectPost.sys.id]" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-outline ms-1">Read more <div class="fab"><i class="fas fa-arrow-alt-circle-right" ></i></div></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+<div class="custom-shape-divider-bottom-1667156080">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+<div class="custom-shape-divider-top-1667156508">
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+</svg>
+</div>
