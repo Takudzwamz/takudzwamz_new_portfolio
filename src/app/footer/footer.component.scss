@@ -11,3 +11,56 @@
 a{
     color: #480470
 }
+
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+
+  .list-item {
+    line-height: 2.5;
+    //color: #aaa;
+  }
+  .list-item p {
+    color: #6C55F9;
+    text-decoration: none;
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    transition-duration: 0.2s;
+ }
+
+    .list-item p:hover {
+        color: rgb(216, 127, 127);
+        text-decoration: none;
+    }
+
+    .list-item a {
+        color: #6C55F9;
+        text-decoration: none;
+        font: 300 18px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        transition-duration: 0.2s;
+    }
+
+    .list-item a:hover {
+        color: rgb(216, 127, 127);
+        text-decoration: none;
+    }
+
+    .list-item i {
+        color: #6C55F9;
+        text-decoration: none;
+        font: 300 28px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        transition-duration: 0.2s;
+        margin-left: 8px;
+    }
+
+
+  
+
+
+    .place {
+        margin-left: 62px;
+    }
