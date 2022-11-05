@@ -44,13 +44,13 @@ export class I18nModule {
     @Inject(PLATFORM_ID) private platform: any
   ) {
     translateCacheService.init();
-    translate.addLangs(['en', 'ru']);
+    translate.addLangs(['en', 'ru', 'ar']);
 
     const browserLang = isPlatformBrowser(this.platform)
       ? translateCacheService.getCachedLanguage() || translate.getBrowserLang() || 'en'
       : this.getLangFromServerSideCookie() || 'en';
 
-    translate.use(browserLang.match(/en|ru/) ? browserLang : 'en');
+    translate.use(browserLang.match(/en|ru|ar/) ? browserLang : 'en');
   }
 
   getLangFromServerSideCookie() {
