@@ -239,7 +239,7 @@ $form-group-margin-bottom: 30px !default;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .pic {
-    height: 620px;
+    height: 720px;
   }
 }
 
@@ -270,8 +270,7 @@ h2 {
   margin: 0 0 30px 0;
 }
 
-
-
+// SKILLS SECTION start
 
 
 .skill-bars{
@@ -329,7 +328,7 @@ h2 {
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.html span{
-  width: 75%;
+  width: 85%;
 }
 .bar .progress-line.css span{
   width: 70%;
@@ -388,7 +387,7 @@ width: 75%;
   }
 }
 .progress-line.html span::after{
-  content: "75%";
+  content: "85%";
 }
 .progress-line.css span::after{
   content: "70%";
@@ -419,7 +418,7 @@ content: "75%";
 }
 
 
-
+// SKILLS SECTION end
 
 
 

@@ -51,7 +51,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.canonicalService.setCanonicalURL();
-    this.title.setTitle('Takudzwa Mupanesure (Sputnik Tech)');
+    this.title.setTitle('Takudzwa Mupanesure');
+    
   }
 
 }
