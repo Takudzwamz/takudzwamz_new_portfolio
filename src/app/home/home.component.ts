@@ -4,6 +4,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { CanonicalService } from '../services/canonical.service';
 
 
+
 /**
  * @title Basic cards
  */
@@ -15,7 +16,7 @@ import { CanonicalService } from '../services/canonical.service';
   providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
 })
 export class HomeComponent implements OnInit {
-
+  
   constructor(
     config: NgbCarouselConfig,
     private title: Title,
@@ -52,6 +53,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.canonicalService.setCanonicalURL();
     this.title.setTitle('Takudzwa Mupanesure');
+    
+    
     
   }
 

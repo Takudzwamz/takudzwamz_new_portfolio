@@ -2,28 +2,65 @@
     "Home": "Home",
     "Projects": "Projects",
     "Blogs": "Blog",
-    "ContactUs": "Contact Me",
+    "ContactUs": "Contact",
     "Teams": "Team",  
-    "headerOne": "is involed in the development of web, mobile and desktop applications.",
+    "JobTitle": "Full Stake Developer",
     "headerTakudzwa": "Takudzwa",
     "headerMupanesure": "Mupanesure",
-    "headerOurServices": "Our Services",
-    "headerServices": "Services offered by",
-    "pointOne": "Lets work together and make the best application according to your specifications and our expertise.",
+    "headerIntro": "I'm a full stack developer, I create web and mobile applications. I like what I do and I'm always looking forward to deliver the best looking and functional applications.",
+    "headerAbout": "About",
+    "MyResumeButton": "my resume",
+    "ProfSummary": "Professional Summary",
+    "Summary": "Summary",
+    "SummaryOne": "Dedicated and efficient full stack developer with 3+ years of experience in the .Net environment. Skilled in ASP.NET Core, Xamarin.Forms(Mobile development for both iOS and Android) and client-side web development(Angular applications).",
+    "SummaryTwo": "Started a Software development startup called Sputnik Tech where we create Software for ourselves and our clients. The startup develops various types of Software from web, desktop to mobile applications.",
+    "SummaryThree": "I believe learning by doing is the best way to learn hence I work towards creating as many projects as I can hence improving my skills. I believe in team work(Hello Sputnik Tech) since one man can't change the world but two or more people can.",
+    "GithubButton": "Check out my Github repositories",
+    "MySkills": "My Skills",
+    "English": "English",
+    "RussianLanguage": "Russian Language",
 
-    "servicesOfferedOne": "Web applications development",
-    "servicesOfferedOneP": "We develop all types of web apps, from simple static websites to complex E-commerce web applications.",
-    "servicesOfferedTwo": "Mobile(iOS & Android) applications development",
-    "servicesOfferedTwoP": "We develop all types of mobile applications from E-commerce to Taxi apps, you name it we will create it.",
-    "servicesOfferedThree": "Crossplatform applications development",
-    "servicesOfferedThreeP": "We develop one application that will work on Web, Desktop, iOS and Android with the same user experince and feel on all platforms.",
+    "EduQul": " EDUCATION AND QUALIFICATIONS",
+    "EduUniVrn": "Voronezh State University, Vrn , Russian Federation.",
+    "EduDateVrn": "Sept 2016 to July 2020", 
+    "EduCertVrn": "Certification",
+    "EduCertTwoVrn": "B.Sc in Fundamental Computer Science and IT",
+    "EduUniSpb": "Saint Petersburg State University, Russian Federation. ",
+    "EduDateSpb": "Sept 2022 to July 2024", 
+    "EduCertSpb": "Certification",
+    "EduCertTwoSpb": "M.Sc in Artificial Intelligence and Big data",
+    "Work": "WORK",
+    "WrkJobeTitleVrn": "Mobile development Intern",
+    "WrkCountryVrn": "Russian Federation", 
+    "WrkDateVrn": "Sept 2019 to Aug 2020",
+    "WrkCompanyVrn": "DataArt R&D Center Voronezh",
+    "WrkJobeTitleSpb": "Full stack Developer",
+    "WrkCountrySpb": "Russian Federation",
+    "WrkDateSpb": "October 2020 to present",
+    "WrkCompanySpb": "Sputnik Tech",
 
-    "headerOurTeam": "Our team",
-    "teamHeaderOne": "We're a",
-    "teamHeaderTwo": " Team of developers with vast experiences",
-    "teamHeaderD": "Dynamic",
-    "teamP": "We are a dedicated team of developers who will design and develop applications according to your specifications.",
-    "teamButton": "Team members",
+    "ServicesImOffering": "Services I'm offering",
+    "ServicesImOfferingDisc": "Want a Services, E-commerce or any type of website? Hire me, lets work together to give your customer the best online experience. Call me or email me lets talk.",
+
+    "ServiceHeaderOne": "E-Commerce Websites",
+    "ServiceDiscOne": "Fully responsive website, optimized to work on phone, tablets and computers, complete with shipping services, Online payment gateway integration, pagination, filtering, sorting, Admin panel and more.",
+
+    "ServiceHeaderTwo": "Services Websites",
+    "ServiceDiscTwo": "Fully responsive website, optimized to work on phone, tablets and computers, showcace your services to your clients in a beautiful and user friendly website/web app, comes with an Admin panel and more.",
+
+    "ServiceHeaderThree": "Android Applications",
+    "ServiceDiscThree": "Lets create a services or e-commerce Android mobile app, can also come with a website companion to give your customers/clients a choice to use your apps on various platforms. Comes with an Admin panel",
+
+    "ServiceHeaderFour": "iOS Applications",
+    "ServiceDiscFour": "Lets create a services or e-commerce iOS mobile app, can also come with a website companion to give your customers/clients a choice to use your apps on various platforms. Comes with an Admin panel",
+
+    "ServiceHeaderFive": "iOS & Android Crossplatform Apps",
+    "ServiceDiscFive": "Serve all your users from either iOS or Android with the same experience as these crossplatform apps share the same UI and experience. Lets work together if you are interested.",
+
+    "ServiceHeaderSix": "API's",
+    "ServiceDiscSix": "Want me to develop your custom API, Lets customize your API for various applications where being implemented on mobile or web platforms.",
+
+    "OpenFeaturedProjects": "Оpen Featured Projects",
 
     "headerMarketing": "Marketing",
     "marketingHeaderOne": "We're",
@@ -53,7 +90,7 @@
     "projectsHeaderOne": "Check out our past",
     "projectsHeaderR": "Projects",
     "projectsHeaderTwo": " and see our work thus far",
-    "projectsPOne": "Care to check out Sputnik Tech past projects, we've created websites for E-commerce businesses, company profiles and E-commerce mobile apps.",
+    "projectsPOne": "Check out the projects I have completed thus far. The projects range from web applications to mobile applications. I am always looking to learn new technologies and improve my skills.",
 
 
     "FAQSQuestionOne": "What can you help me with?",
@@ -99,7 +136,8 @@
 
     "FAQS": "FAQ's",
 
-    "FooterContentSputnikTech": "If you like what we do, contact us and lets work together on a project.",
+    "FooterContentSputnikTech": "If you like what I do please contact me, lets work together on a project.",
+    "FooterContentTakudzwa": "Takudzwa Mupanesure",
 
     "Address": "Saint Petersburg",
     "DesignedBy": "Designed and Created by",
@@ -107,11 +145,11 @@
     "Pages": "Pages",
     "SocialMedia": "Social Media",
 
-    "headerContactUs": "Contact us",
+    "headerContactUs": "Contact me",
     "ContactUsHeaderOne": "Get in touch with",
     "ContactUsHeaderR": "Sputnik Tech",
     "ContactUsHeaderTwo": "we'd love to hear from you",
-    "ContactUsPOne": "We value your opinions, feel free to message/call us. If you have questions you'd like to be answered please dont hesitate to contact us.",
+    "ContactUsPOne": "If you like what I do please contact me, lets work together on a project.",
 
     "headerBlogs": "Blog",
     "BlogsHeaderOne": "Check out our",
@@ -123,7 +161,7 @@
     "GoBackHomeButton": "Go Back Home",
     "BacktoProjectsButton": "Back to Projects list",
     "BacktoBlogsButton": "Back to Blogs list",
-    "GitHubButton": "GitHub link", 
+    "GitHubButtonOne": "GitHub link", 
     "LinkToLiveProjectButton": "Link to live project"
 
     

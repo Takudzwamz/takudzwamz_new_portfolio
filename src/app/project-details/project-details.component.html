@@ -19,8 +19,8 @@
 						<h6  data-aos="flip-left" data-aos-duration="1000" class=" ml-3" href="author.html"><i style="color: #6C55F9;" class="fas fa-3x fa-project-diagram"></i>  {{projectPost.fields.title}}</h6>
 						<div class="divider "></div>
 						<span class="author-description">{{projectPost.fields.summary}}</span>
-						<a  href="{{projectPost.fields.source}}" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-split my-2 ms-3 me-3">Github link <div class="fab"><i class="fas fa-arrow-alt-circle-right" ></i></div></a>
-						<a  href="{{projectPost.fields.link}}" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-split ms-1">Link to live project <div class="fab"><i class="fas fa-arrow-alt-circle-right" ></i></div></a>
+						<a  href="{{projectPost.fields.source}}" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-split my-2 ms-3 me-3">{{'GitHubButtonOne'| translate}}<div class="fab"><i class="fas fa-arrow-alt-circle-right" ></i></div></a>
+						<a  href="{{projectPost.fields.link}}" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-split ms-1">{{'LinkToLiveProjectButton'| translate}}<div class="fab"><i class="fas fa-arrow-alt-circle-right" ></i></div></a>
 						
 					</div>
 				</div>
@@ -67,7 +67,7 @@
 
 			<!-- Begin Tags -->
 			<div class="my-5" >
-				<a  [routerLink]="['/projects']" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-split ms-1">Projects list <div class="fab"><i class="fas fa-arrow-alt-circle-left" ></i></div></a>
+				<a  [routerLink]="['/projects']" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-split ms-1">{{'BacktoProjectsButton'| translate}} <div class="fab"><i class="fas fa-arrow-alt-circle-left" ></i></div></a>
 			</div>
 			<!-- End Tags -->
 

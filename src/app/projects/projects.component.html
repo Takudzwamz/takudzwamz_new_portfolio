@@ -4,9 +4,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 my-5">
-        <h2 class="head-bar"><i class="fas fa-2x fa-laptop-code"></i> Projects</h2>
+        <h2 class="head-bar"><i class="fas fa-2x fa-laptop-code"></i> {{'projectsHeaderR'| translate}}</h2>
         <p class="justify-content-center ms-3">
-          Check out the projects I have completed thus far. The projects range from web applications to mobile applications. I am always looking to learn new technologies and improve my skills.
+          {{'projectsPOne'| translate}}
         </p>
 
 
@@ -21,7 +21,7 @@
                       margin: 10px 10px;
                       padding: 10px 10px;
                       
-                      text-align: center;">Go back home <i class="fas fa-arrow-alt-circle-left"></i></a>
+                      text-align: center;">{{'GoBackHomeButton'| translate}} <i class="fas fa-arrow-alt-circle-left"></i></a>
 
 
 
@@ -75,7 +75,7 @@
         </article>
         <div class="d-flex flex-row mt-3 mb-3">  
             <div class="ms-3 d-flex flex-column"> 
-                <a  [routerLink]="['/projects', projectPost.sys.id]" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-outline ms-1">Read more <div class="fab"><i class="fas fa-arrow-alt-circle-right" ></i></div></a>
+                <a  [routerLink]="['/projects', projectPost.sys.id]" style="color: #FFFFFF; border-radius:30px; cursor:pointer; background-color: #6C55F9; border-color:transparent;" class="btn btn-primary btn-outline ms-1">{{'ReadMoreButton'| translate}} <div class="fab"><i class="fas fa-arrow-alt-circle-right" ></i></div></a>
             </div>
         </div>
       </div>
