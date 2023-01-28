@@ -27,7 +27,7 @@ export class ProjectsComponent implements OnInit {
     this.title.setTitle('Projects');
     this.canonicalService.setCanonicalURL();
     this.metaTagService.updateTag(
-      { name: 'description', content: 'Projects' }
+      { name: 'description', content: 'Projects'}
     );
   }
 }
