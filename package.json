@@ -1,10 +1,13 @@
 {
   "name": "takudzwamz",
   "version": "0.0.0",
+  "engines": {
+    "node": "16.18.0"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run serve:ssr --force=false",
+    "build": "npm run build:ssr --force=false",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run takudzwamz:serve-ssr",
