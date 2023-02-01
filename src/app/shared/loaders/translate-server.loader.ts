@@ -21,7 +21,7 @@ export class TranslateServerLoader implements TranslateLoader {
       const assets_folder = join(
         process.cwd(),
         'dist',
-        'sputnik-tech', // Your project name here
+        'takudzwamz', // Your project name here
         'browser',
         'assets',
         this.prefix
